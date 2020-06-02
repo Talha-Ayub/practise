@@ -23,13 +23,12 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: install NodeJS
-      uses: action/setup-node@v2-beta
+      uses: actions/setup-node@v2-beta
       with:
         node-version: 12
     # Runs a set of commands using the runners shell
     - name: install surge
       run: npm install -g surge
     - name: Run Surge
-      run: surge ./  practisenewapp.surge.sh --token ${{secrets.NEW}}
-  
+      run: surge ./ wicked-yam.surge.sh --token ${{secrets.NEW}}
   
