@@ -30,6 +30,6 @@ jobs:
     - name: install surge
       run: npm install -g surge
     - name: Run surge
-      run: surge ./ special-color.surge.sh --token ${{secrets.PRACTISE_TOKEN}}
+      run: surge ./ http://unused-wall.surge.sh/ --token ${{secrets.PRACTISE_TOKEN}}
   
   
